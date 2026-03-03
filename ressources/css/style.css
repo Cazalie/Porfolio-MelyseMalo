@@ -16,7 +16,7 @@ body{
 
 /******************** HEADER ********************/
 header{
-
+    margin: 40px auto;
 }
 
 
@@ -24,7 +24,32 @@ header{
 main{
 
 }
-
+#contact{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    button{
+        width: 250px;
+        height: 50px;
+        border-radius: 5px;
+        font-weight: bold;
+        &:hover{
+            box-shadow: rgba(0, 0, 0, 0.25) 1.95px 1.95px 2.6px;
+        }
+        &#email{
+            background-color: #7fd895;
+        }
+        &#linkedin{
+            background-color: #0e76a8 ;
+        }
+        &#behance{
+            background-color: #053eff;
+        }
+        &#instagram{
+            background-color: #d981ff;
+        }
+    }
+}
 
 /******************** FOOTER ********************/
 footer{
