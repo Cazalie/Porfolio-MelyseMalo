@@ -11,18 +11,25 @@ html{
 
 body{
     text-align: center;
+    background-image: url("/ressources/images/arbre.png");
+    background-color: rgba(250, 250, 250, 0.5);
+    background-blend-mode: lighten;
 }
 
 
 /******************** HEADER ********************/
 header{
-    margin: 40px auto;
+    width: 100%
 }
-
 
 /******************** MAIN ********************/
 main{
 
+}
+
+#aPropos{
+    width: 80vw;
+    margin-bottom: 5%;
 }
 #contact{
     display: flex;
@@ -31,22 +38,24 @@ main{
     button{
         width: 250px;
         height: 50px;
-        border-radius: 5px;
+        border-radius: 10px;
+        border: none;
         font-weight: bold;
+        color: black;
         &:hover{
             box-shadow: rgba(0, 0, 0, 0.25) 1.95px 1.95px 2.6px;
         }
         &#email{
-            background-color: #7fd895;
+            background-color: #d9ffda;
         }
         &#linkedin{
-            background-color: #0e76a8 ;
+            background-color: #bdeaff ;
         }
         &#behance{
-            background-color: #053eff;
+            background-color: #c0ceff;
         }
         &#instagram{
-            background-color: #d981ff;
+            background-color: #ffd1fd;
         }
     }
 }
@@ -54,4 +63,23 @@ main{
 /******************** FOOTER ********************/
 footer{
 
+}
+
+/******************** GRAND ********************/
+@media screen and (min-width: 1920px) {
+
+}
+
+/******************** BUREAU ********************/
+@media screen and (min-width: 1200px) {
+    #contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    }
+    
+}
+/******************** TABLETTE ********************/
+@media screen and (min-width: 800px) {
+    
 }
