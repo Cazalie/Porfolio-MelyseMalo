@@ -1,6 +1,7 @@
 /******************** GLOBAL ********************/
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 *{
@@ -35,20 +36,29 @@ header{
 
 /******************** MAIN ********************/
 main{
-    width: 100vw;
+    width: 90vw;
+}
+
+section{
+    margin: 2.5vh;
+    font-family: Philosopher;
+    color: rgb(18, 67, 20);
+    h2{
+        font-size: 1.5rem;
+        margin: 5vh 0 2.5vh 0;
+    }
 }
 
 #aPropos{
-    margin: 2.5vh;
+
     background-color: rgba(211, 255, 203, 0.75);
     border: 1px solid rgba(211, 255, 203);
     border-radius: 2.5%;
-    color: rgb(18, 67, 20);
     padding: 2.5vh;
     font-size: 1rem;
     line-height: 2;
-    font-family: Philosopher;
 }
+
 #contact{
     display: flex;
     flex-direction: column;
@@ -58,13 +68,14 @@ main{
         width: 250px;
         height: 50px;
         border: none;
-        font-weight: bold;
         font-size: 1rem;
         font-family: Magnolia;
         background-color: rgba(211, 255, 203, 0.5);
         border: 1px solid rgba(211, 255, 203);
         border-radius: 10px;
         &:hover{
+            font-weight: bold;
+            background-color: rgba(211, 255, 203, 0.75);
             box-shadow: rgb(18, 67, 20, 0.25) 1.95px 1.95px 2.6px;
         }
         &#email{
@@ -84,7 +95,13 @@ footer{
 }
 
 /******************** TABLETTE ********************/
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 600px) {
+    main{
+        width: 95vw;
+    }
+    section{
+        color: rgb(18, 51, 67);
+    }
     #aPropos{
         background-color: rgba(203, 249, 255, 0.75);
         color: rgb(18, 51, 67);
@@ -92,6 +109,7 @@ footer{
         border-radius: 0;
     }
     #contact {
+        width: 90vw;
         flex-direction: row;
         flex-wrap: wrap;
         button{
@@ -99,6 +117,7 @@ footer{
             border: 1px solid rgba(203, 249, 255);
             color: rgb(18, 51, 67);
             &:hover{
+                background-color: rgba(203, 249, 255, 0.75);
                 box-shadow: rgb(18, 51, 67, 0.25) 1.95px 1.95px 2.6px;
             }
         }
@@ -107,6 +126,12 @@ footer{
 
 /******************** BUREAU ********************/
 @media screen and (min-width: 1200px) {
+    section{
+        color: rgb(44, 18, 67);
+        h2{
+            font-size: 2rem;
+        }
+    }
     #aPropos{
         background-color: rgba(213, 203, 255, 0.75);
         color: rgb(44, 18, 67);
@@ -120,6 +145,7 @@ footer{
                 border: 1px solid rgba(213, 203, 255);
                 color: rgb(44, 18, 67);
                 &:hover{
+                    background-color: rgba(213, 203, 255, 0.75);
                     box-shadow: rgb(44, 18, 67, 0.25) 1.95px 1.95px 2.6px;
                 } 
             }
@@ -128,6 +154,9 @@ footer{
 
 /******************** GRAND ********************/
 @media screen and (min-width: 1920px) {
+    section{
+        color: rgb(67, 18, 44);
+    }
     #aPropos{
         background-color: rgba(255, 203, 239, 0.75);
         color: rgb(67, 18, 44);
@@ -137,6 +166,7 @@ footer{
         background-color: rgba(255, 203, 239, 0.5);
         border: 1px solid rgba(255, 203, 239);
         &:hover{
+            background-color: rgba(255, 203, 239, 0.75);
             box-shadow: rgb(67, 18, 44, 0.25) 1.95px 1.95px 2.6px;
         } 
     }
