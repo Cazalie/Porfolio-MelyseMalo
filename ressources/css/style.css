@@ -27,6 +27,7 @@ body{
     background-image: url("../images/arbre.png");
     background-color: rgba(255, 255, 255, 0.5);
     background-blend-mode: lighten;
+    font-family: Philosopher;
 }
 
 /******************** HEADER ********************/
@@ -41,7 +42,6 @@ main{
 
 section{
     margin: 2.5vh;
-    font-family: Philosopher;
     color: rgb(18, 67, 20);
     font-size: 2rem;
     h2{
@@ -51,7 +51,6 @@ section{
 }
 
 #aPropos{
-
     background-color: rgba(211, 255, 203, 0.75);
     border: 1px solid rgba(211, 255, 203);
     border-radius: 2.5%;
@@ -91,7 +90,8 @@ section{
 
 /******************** FOOTER ********************/
 footer{
-
+    margin-top: 5vh;
+    color: rgb(18, 67, 20);
 }
 
 /******************** TABLETTE ********************/
@@ -122,6 +122,9 @@ footer{
             }
         }
     }
+    footer{
+        color: rgb(18, 51, 67);
+    }
 }
 
 /******************** BUREAU ********************/
@@ -140,16 +143,19 @@ footer{
     }
     #contact{
         flex-wrap:nowrap;
-            button{
-                background-color: rgba(213, 203, 255, 0.5);
-                border: 1px solid rgba(213, 203, 255);
-                color: rgb(44, 18, 67);
-                &:hover{
-                    background-color: rgba(213, 203, 255, 0.75);
-                    box-shadow: rgb(44, 18, 67, 0.25) 1.95px 1.95px 2.6px;
-                } 
-            }
+        button{
+            background-color: rgba(213, 203, 255, 0.5);
+            border: 1px solid rgba(213, 203, 255);
+            color: rgb(44, 18, 67);
+            &:hover{
+                background-color: rgba(213, 203, 255, 0.75);
+                box-shadow: rgb(44, 18, 67, 0.25) 1.95px 1.95px 2.6px;
+            } 
         }
+    }
+    footer{
+        color: rgb(44, 18, 67);
+    }
 }
 
 /******************** GRAND ********************/
@@ -169,5 +175,8 @@ footer{
             background-color: rgba(255, 203, 239, 0.75);
             box-shadow: rgb(67, 18, 44, 0.25) 1.95px 1.95px 2.6px;
         } 
+    }
+    footer{
+        color: rgb(67, 18, 44);
     }
 }
