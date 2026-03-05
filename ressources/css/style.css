@@ -43,8 +43,9 @@ section{
     margin: 2.5vh;
     font-family: Philosopher;
     color: rgb(18, 67, 20);
+    font-size: 2rem;
     h2{
-        font-size: 1.5rem;
+        font-size: 3rem;
         margin: 5vh 0 2.5vh 0;
     }
 }
@@ -55,7 +56,6 @@ section{
     border: 1px solid rgba(211, 255, 203);
     border-radius: 2.5%;
     padding: 2.5vh;
-    font-size: 1rem;
     line-height: 2;
 }
 
@@ -68,8 +68,8 @@ section{
         width: 250px;
         height: 50px;
         border: none;
-        font-size: 1rem;
         font-family: Magnolia;
+        font-size: 1.5rem;
         background-color: rgba(211, 255, 203, 0.5);
         border: 1px solid rgba(211, 255, 203);
         border-radius: 10px;
