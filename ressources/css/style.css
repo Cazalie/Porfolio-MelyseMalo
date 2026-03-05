@@ -65,8 +65,8 @@ section{
     gap: 1.5rem;
     button{
         color: rgb(18, 67, 20);
-        width: 250px;
-        height: 50px;
+        min-width: 200px;
+        padding: 10px 20px; 
         border: none;
         font-family: Magnolia;
         font-size: 1.5rem;
