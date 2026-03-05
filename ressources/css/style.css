@@ -95,7 +95,7 @@ footer{
 }
 
 /******************** TABLETTE ********************/
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
     main{
         width: 95vw;
     }
