@@ -1,0 +1,65 @@
+
+/******************** Global ********************/
+body{
+    background-color: var(--mobileArriere);
+    color: var(--mobileEcriture);
+    font-family: Philosopher;
+    text-align: center;
+    font-size: 1rem;
+    h2{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+}
+
+/******************** Header ********************/
+header{
+    width: 100vw;
+}
+
+/******************** Main ********************/
+main{
+    width: 90vw;
+}
+
+section{
+    margin: 2.5vh;
+}
+
+#aPropos{
+    padding: 2.5vh;
+    line-height: 2;
+}
+
+#reseaux{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+button{
+    color: var(--mobileEcriture);
+    min-width: 200px;
+    margin: 1vw;
+    padding: 15px 20px; 
+    border: none;
+    font-family: Magnolia;
+    font-size: 0.75rem;
+    background-color: var(--mobileBouton);
+    border: var(--mobileBordure);
+    border-radius: 10px;
+    box-shadow: var(--mobileOmbre);
+    &:hover{
+        font-weight: bold;
+        background-color: var(--mobileBoutonHover);
+        box-shadow: none;
+        border: var(--mobileBordureHover);
+    }
+}
+
+/******************** Footer ********************/
+footer{
+    margin-top: 5vh;
+}
+

@@ -1,0 +1,32 @@
+/******************** TABLETTE ********************/
+@media screen and (min-width: 400px) {
+    body{
+        background-color: var(--tabletteArriere);
+        color: var(--tabletteEcriture);
+    }
+    main{
+        width: 95vw;
+    }
+    #aPropos{
+    }
+    #reseaux{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #reseaux > div{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    button{
+        color: var(--tabletteEcriture);
+        background-color: var(--tabletteBouton);
+        border: var(--tabletteBordure);
+        box-shadow: var(--tabletteOmbre);
+        &:hover{
+            background-color: var(--tabletteBoutonHover);
+            border: var(--tabletteBordureHover);
+        }
+    }
+}

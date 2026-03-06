@@ -1,0 +1,46 @@
+/******************** BUREAU ********************/
+@media screen and (min-width: 800px) {
+    body{
+        background-color: var(--bureauArriere);
+        color: var(--bureauEcriture);
+    }
+    #aPropos{
+        margin-bottom: 25px;
+        font-size: 1.25rem;
+    }
+    #reseaux{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #reseaux > div{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    #reseaux > div > div{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    #projet button,
+    #contact #linkedin{
+        min-width: 100px;
+        width: 15vw;
+    }
+    #contact #email{
+        min-width: 200px;
+        width: auto;
+    }
+    button{
+        font-size: 1rem;
+        color: var(--bureauEcriture);
+        background-color: var(--bureauBouton);
+        border: var(--bureauBordure);
+        box-shadow: var(--bureauOmbre);
+        &:hover{
+            background-color: var(--bureauBoutonHover);
+            border: var(--bureauBordureHover);
+        } 
+    }
+}
