@@ -2,6 +2,8 @@
 <html lang="fr-CA">
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="ressources/css/normalize.css">
+        <link rel="stylesheet" href="ressources/css/variables.css">
         <link rel="stylesheet" href="ressources/css/style.css">
         <link rel="icon" type="image/x-icon" href="ressources/images/icone.png">
         <title>Mélyse Larissa Malo</title>
@@ -10,13 +12,13 @@
         <header>
             <picture>
                 <source 
-                    media="(min-width: 1920px)" 
+                    media="(min-width: 1200px)" 
                     srcset="ressources/images/banniere1_grand.png">
                 <source 
-                    media="(min-width: 1200px)" 
+                    media="(min-width: 800px)" 
                     srcset="ressources/images/banniere2_bureau.png">
                 <source 
-                    media="(min-width: 800px)" 
+                    media="(min-width: 400px)" 
                     srcset="ressources/images/banniere3_tablette.png">
                 <img 
                     src="ressources/images/banniere4_mobile.png"
@@ -26,28 +28,35 @@
             </picture>
         </header>
         <main>
-            <section>
+            <section id="aPropos">
                 <h2>À propos de moi</h2>
-                <p id="aPropos">Étudiante en intégration multimédia, je me distingue par ma créativité, ma persévérance et ma soif d’apprentissage.
+                <p>Étudiante en intégration multimédia, je me distingue par ma créativité, ma persévérance et ma soif d’apprentissage.
                     Mon parcours en intervention m’a permis de développer une sensibilité aux réalités sociales.
                     Je souhaite ainsi mettre mes compétences au service d’entreprises et d’organismes afin de valoriser leur mission et leur impact sur notre société.
                 </p>
             </section>
-            <section>
-                <h2>Mes réseaux</h2>
+            <section id="reseaux">
+                <div id="projet">
+                    <h3>Voir mes projets</h3>
+                    <div>
+                        <a href="https://www.behance.net/MelyseLarissaMalo" target="_blank">
+                            <button id="behance">Behance</button>
+                        </a>
+                        <a href="https://www.instagram.com/melymaloproduction" target="_blank">
+                            <button id="instagram">Instagram</button>
+                        </a>
+                    </div>
+                </div>
                 <div id="contact">
-                    <a href="mailto:larissa.malo@outlook.com">
-                        <button id="email">larissa.malo@outlook.com</button>
-                    </a>
-                    <a href="https://www.linkedin.com/in/m%C3%A9lyse-larissa-malo-3536a9155/" target="_blank">
-                        <button id="linkedin">LinkedIn</button>
-                    </a>
-                    <a href="https://www.behance.net/MelyseLarissaMalo" target="_blank">
-                        <button id="behance">Behance</button>
-                    </a>
-                    <a href="https://www.instagram.com/melymaloproduction" target="_blank">
-                        <button id="instagram">Instagram</button>
-                    </a>
+                    <h3>Me contacter</h3>
+                    <div>
+                        <a href="mailto:larissa.malo@outlook.com">
+                            <button id="email">larissa.malo@outlook.com</button>
+                        </a>
+                        <a href="https://www.linkedin.com/in/m%C3%A9lyse-larissa-malo-3536a9155/" target="_blank">
+                            <button id="linkedin">LinkedIn</button>
+                        </a>
+                    </div>
                 </div>
             </section>
         </main>
