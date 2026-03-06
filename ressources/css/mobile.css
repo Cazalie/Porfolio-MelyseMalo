@@ -38,6 +38,12 @@ section{
     flex-direction: column;
     gap: 1.5rem;
 }
+
+#reseaux > div > div {
+    display: flex;
+    flex-direction: column;
+}
+
 button{
     color: var(--mobileEcriture);
     min-width: 200px;

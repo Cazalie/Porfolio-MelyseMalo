@@ -1,5 +1,5 @@
 /******************** TABLETTE ********************/
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 600px) {
     body{
         background-color: var(--tabletteArriere);
         color: var(--tabletteEcriture);
